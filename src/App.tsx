@@ -25,11 +25,13 @@ const Home: React.ForwardRefRenderFunction<HomeProps> =(props) => {
              gradient={mainBody.gradientColors}
              title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
              message={mainBody.message}
-            // icons={mainBody.icons}
+             icons={mainBody.icons}
           />
           <AboutMe
             heading={about.heading}
             message={about.message}
+            link={about.imageLink}
+            imgSize={about.imageSize}
             showPic={true}
           />
           <Experience />
