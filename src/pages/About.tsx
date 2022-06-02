@@ -119,7 +119,7 @@ const Work:FC<{item:IAbout, i:number}> = (props) => {
 
 const About:FC = () => (
   
-  <Main title="About" description="Learn about Michael D'Angelo" >
+  <Main title="About" description="Learn about Vicky Indiarto" >
     <article className="post markdown" id="about">
       <header>
         <div className="title">
