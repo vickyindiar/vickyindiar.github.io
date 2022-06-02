@@ -1,0 +1,55 @@
+/* Skills */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50% !important}
+    50%{background-position:100% 50% !important}
+    100%{background-position:0% 50% !important}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50% !important}
+    50%{background-position:100% 50% !important}
+    100%{background-position:0% 50% !important}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50% !important}
+    50%{background-position:100% 50% !important}
+    100%{background-position:0% 50% !important}
+}
+
+.skillbar-bar {
+    background: linear-gradient(10deg, #ea650a, #994104, #bfb416) !important;
+    background-size: 100% 100% !important;
+    -webkit-animation: AnimationName 2s ease infinite !important;
+    -moz-animation: AnimationName 2s ease infinite !important;
+    animation: AnimationName 2s ease infinite !important;
+	border-radius: 0px !important;
+	border-top-right-radius: 4px !important;
+	border-bottom-right-radius: 4px !important;
+}
+.skillbar{
+	background: var(--component-bg-color) !important;
+}
+
+.skillbar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color: var(--text-color) !important;
+	opacity: 0.65;
+}

@@ -1,72 +1,34 @@
-import './App.css';
-import React, { useEffect, useCallback,ForwardedRef, ReactComponentElement, ReactNode, useState } from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { navBar, mainBody, about } from './editable-stuff/config';
-
-import Navbar from './components/Navbar'
-import MainBody from './components/home/MainBody';
-import AboutMe from './components/home/AboutMe';
-import Experience from './components/home/Experience';
-import Projects from './components/home/Projects';
-import Leadership from './components/home/Leadership';
-import Skills from './components/home/Skills';
-import Footer from './components/Footer'
+import React, { lazy, Suspense, useEffect, useCallback,ForwardedRef, ReactComponentElement, ReactNode, useState } from 'react';
+// import { Counter } from './features/counter/Counter';
+import { BrowserRouter, Routes,  Route } from 'react-router-dom';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './static/css/main.scss'; // All of our styles
+import Main from './layouts/Main';
 
-type HomeProps = {
 
-}
-const Home: React.ForwardRefRenderFunction<HomeProps> =(props) => {
-  return (
-    <>
-          <MainBody
-             gradient={mainBody.gradientColors}
-             title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-             message={mainBody.message}
-             icons={mainBody.icons}
-          />
-          <AboutMe
-            heading={about.heading}
-            message={about.message}
-            link={about.imageLink}
-            imgSize={about.imageSize}
-            showPic={true}
-          />
-          <Experience />
-          <Projects/>
-          <Leadership />
-          <Skills />
-        
-    </>
-  )
-};
-
+const Index = lazy(() => import('./pages/Index'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Projects = lazy(() => import('./pages/Experiences'))
+const About = lazy(() => import('./pages/About'));
+const Skills = lazy(() => import('./pages/Skills'))
+const Resume = lazy(() => import('./pages/Resume'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 function App() {
- // const titleRef = React.useRef<react>()
-
-
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL+"/"}>
-      {navBar.show && <Navbar />}
+    <Suspense fallback={<Main />}>
       <Routes>
-        <Route path="/"  element={<Home />} />
-        
+        <Route path="/" element={<Index />} />
+        <Route path="/about"  element={<About />} />
+        <Route path="/experiences"  element={<Projects />} />
+        <Route path="/resume"  element={<Resume />} />
+        <Route path="/skills"  element={<Skills />} />
+        <Route path="/contact"  element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer>
-          <div>
-            <h2>vicky</h2>
-          </div>
-        {/* {getInTouch.show && (
-          <GetInTouch
-            heading={getInTouch.heading}
-            message={getInTouch.message}
-            email={getInTouch.email}
-          /> 
-        )}*/}
-      </Footer>
+      </Suspense >
     </BrowserRouter>
   );
 }
