@@ -13,8 +13,9 @@ const about: IAbout[] = [
     {
         type:'intro',
         title: 'ME',
-        desc:'Hi, I\'m Vicky Indiarto from Bekasi, Indonesia. I have a Bechelor of System Information degree from Gunadarma University.'+
-             ' I mostly focus on web development, but i have hight spirit to keep learn on mobile Application and Desktop Application '
+        desc:'I love spending time on fixing small details and optimizing what I create. and I also have an interest for new technologies.'+
+            ' As you already know, if you are interested in programming then you will never stop learning. '+
+            ' And also I like working in a team, you will learn faster and much more, As the saying goes: "two heads are better than one" '
     },
     {
         type: 'edu',
@@ -26,7 +27,7 @@ const about: IAbout[] = [
     },
     {
         type: 'work',
-        title: 'Work Experiance',
+        title: 'Work Experience',
         desc:[
             {year: '2016 - Present', name: 'Software Developer', on:'PT. Epsylon Citra Informatika', desc:''},
             {year: '05 - 12 2014', name: 'Wirehouse Administration', on:'PT. Simpur Makmur', desc:''}

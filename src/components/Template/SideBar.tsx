@@ -29,14 +29,8 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Michael. I like building things.
-        I am a <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC Alumni, and
-        the co-founder and CTO of <a href="https://arthena.com">Arthena</a>. Before Arthena I was
-        at <a href="https://matroid.com">Matroid</a>
-        , <a href="https://planet.com">Planet</a>
-        , <a href="https://planetaryresources.com">Planetary Resources</a>
-        , <a href="https://facebook.com">Facebook</a>
-        , and <a href="https://seds.org">SEDS</a>.
+      <p>
+        Hi, I'm Vicky Indiarto from Bekasi, Indonesia. I have a Bechelor of System Information degree from Gunadarma University. I mostly focus on web development, but i have hight spirit to keep learn on mobile Application and Desktop Application
       </p>
       <ul className="actions">
         <li>
