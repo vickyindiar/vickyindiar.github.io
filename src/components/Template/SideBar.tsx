@@ -30,7 +30,7 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I'm Vicky Indiarto from Bekasi, Indonesia. I have a Bachelor of System Information degree from Gunadarma University. I mostly focus on web development, but i have hight spirit to keep learn on mobile Application and Desktop Application
+        Hi, I'm Vicky Indiarto from Bekasi, Indonesia. I have a Bachelor of System Information degree from Gunadarma University. I mostly focus on web development, but I have a hight spirit to keep learning about mobile Applications and Desktop Applications.
       </p>
       <ul className="actions">
         <li>
