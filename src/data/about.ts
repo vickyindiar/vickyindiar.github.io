@@ -22,7 +22,7 @@ const about: IAbout[] = [
         title: 'Education',
         desc:[
             {year: '2007 - 2010', majority:'Technique Audio Video', GPA:'', name:'SMK Taruna Bangsa'},
-            {year: '2010 - 2015', majority:'S1 System Information', GPA:' 3.01/4.00', name:'Gunadarma University'},
+            {year: '2010 - 2015', majority:'S1 System Information', GPA:' 3.02/4.00', name:'Gunadarma University'},
         ]
     },
     {

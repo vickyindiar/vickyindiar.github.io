@@ -3,7 +3,7 @@ import Main from '../layouts/Main'
 import { Link } from 'react-router-dom'
 import { Document, Page } from 'react-pdf';
 import 'react-pdf/dist/esm/entry.webpack';
-import Pdf from '../data/final-resume_compressed.pdf'
+import Pdf from '../data/resume_vicky.pdf'
 
 
 const Resume:FC = () => {
@@ -23,7 +23,7 @@ const Resume:FC = () => {
       </header>
       <div className='row'>
             <div className='col'>
-              <Document  file='/images/final-resume_compressed.pdf' className={'pdf-container'}>
+              <Document  file='/images/resume_vicky.pdf' className={'pdf-container'}>
                 <Page pageNumber={1}  width={innerWidth > 800 ? 850 : 300}/>
               </Document>
             </div>    

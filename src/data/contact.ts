@@ -15,7 +15,7 @@ const data = [
     icon: faGithub,
   },
   {
-    link: 'https://facebook.com/vickyindiar',
+    link: 'https://www.facebook.com/vicky.indiear',
     label: 'Facebook',
     icon: faFacebookF,
   },
@@ -25,7 +25,7 @@ const data = [
     icon: faInstagram,
   },
   {
-    link: 'https://www.linkedin.com/in/vickyindiarto',
+    link: 'https://www.linkedin.com/in/vicky-indiarto-987336156/',
     label: 'LinkedIn',
     icon: faLinkedinIn,
   },
