@@ -7,11 +7,11 @@ import Pdf from '../data/resume_vicky.pdf'
 
 
 const Resume:FC = () => {
-    const [innerWidth, setInnerWidht] = useState(850)
+    const [innerWidth, setInnerWidth] = useState(850)
 
   useEffect(() =>{
     console.log(window.innerWidth)
-    setInnerWidht(window.innerWidth)
+    setInnerWidth(window.innerWidth)
   }, [window.innerWidth])
   return (
     <Main title="Resume" description="" >
